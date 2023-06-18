@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aitha</title>
+    <link rel="stylesheet" href="portt.css">
+    <script src="https://kit.fontawesome.com/6d3b0d0091.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+ background-color: #080808;   
+ color: #fff; 
+}
+#header{
+    width: 100%;
+    height: 100dvb;
+    background-image: url(images/va.jpg);
+    background-size: cover;
+    background-position: left;
+    
+}
+
+.container{
+  padding: 9px 8% ;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+} 
+nav ul li a{
+    color: #f8f8f8;
+    text-decoration-line: none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: rgba(255, 81, 0, 0.692);
+    position: absolute;
+    left: 0%;
+    bottom: -6px;
+    transition: o.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+}
+.header-text h1 span{
+    color: rgb(236, 13, 13);
+}
+/*-----img----*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+
+button {
+    background-color: #fff;
+    border: 0;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+    transition: color .2s ease-in;
+}
+
+button:hover {
+    color: #222;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    transition: transform .5s ease-in-out;
+}
+
+.left-slide > div {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.left-slide h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+}
+
+.right-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform .5s ease-in-out;
+}
+
+.right-slide > div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+.slider-container .action-buttons button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+}
+
+.slider-container .action-buttons .down-button {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transform: translateX(-100%);
+}
+
+.slider-container .action-buttons .up-button {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transform: translateY(-100%);
+}
+
+
+
+
+
+
+
+
+/*-----about----*/
+#about{
+    padding: 90px 0%;
+    color: #f0e6e6;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+flex-basis: 45%;
+}
+.about-col-1 img{
+   
+    border-radius: 15px;
+}
+.about-col-2 {
+  flex-basis: 50%;
+}
+.sub-title{
+    font-size: 70px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.about-col-2 p{
+    margin-top: 40px;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.info{
+
+    font-size:large;
+    
+}
+/*-------------myskills-------*/
+#skills{
+    padding: 40px 0;  
+}
+.skills-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.skills-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.skills-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.skills-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.skills-list div:hover{
+    background: #2571b8;
+    transform: translateY(-10px);
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+/*------------Eduaction---------*/
+#education{
+    padding: 40px 0;
+}
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+.edu-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.edu-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.edu-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.edu-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.edu-list div:hover{
+    background: #217fd6;
+    transform: translateY(-10px);
+}
+/*---------------contact----------------*/
+.contact-left{
+  flex-basis: 35%;  
+}
+.contact-right{
+    flex-basis: 60%;  
+  }
+  .contact-left p{
+    margin-top: 30px ;
+
+  }
+  .contact-left p i{
+    color: #003cff;
+    margin-right: 15px;
+    font-size: 25px;
+
+  }
+  .social-icons{
+    margin-top: 30px;
+
+  } 
+  .social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #928f8f;
+    display: inline-block;
+    transition: transform(0.5s) ;
+  }
+  .social-icons a:hover{
+    color: #e2e3e7;
+    transform:translateY(-5px) ;
+
+  }
+  .btn{
+    display: inline-block;
+    padding: 15px 4px;
+    background: #044deca2 ;
+    border-radius: 20px;
+  }
+  .contact-right form{
+    width: 100%;
+  }
+  form input,form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #3d3c3c;
+    padding: 15px ;
+    margin: 15px; 
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.btn2{
+    
+    font-size: 20px;
+    color: #e7e1e1;
+    display: inline-block;
+    padding: 17px 6px;
+    background: #0461eca2 ;
+    border-radius: 10px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 200;
+    margin-top: 20px;
+}
+/*--------------------------------css for small screnns*/
+@media only screen and (max-with:600px){
+
+}
+  
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               <img src="images/logo.png" class="nav">
+              <ul>
+                <li><a href="#header"> Home</a></li>
+                <li><a href="myskills"> Profile</a></li>
+                <li><a href="#portfolio"> portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact"> Reach Me</a></li>
+
+               </ul>
+            </nav>
+            <div class="header-text">
+                 <h2>Hai,I am <br> <h1><span>Shad</span></h1></span> </h2>
+            </div>
+        </div>
+    </div>
+
+
+         <!-----about---->
+    <div id="about">
+      <div class="container">
+          <div class="row">
+             <div class="about-col-1">
+                   <img src="C:\Users\shadu\Dropbox\PC\Desktop\vamshi\File0428.JPG" width="470" height="600">
+             </div>
+             <div class="about-col-2">
+                 <h1 class="sub-title">About Me</h1>
+                 <p class="info">I'm Vamshi Aitha,<br> I am currently pursuing BTech 3rd year in the stream  of CSE . <br> Indur Institue of Engineering and Technology.</p>
+             </div>
+          </div>
+       </div>
+    </div>
+    <!-----My skills---->
+     <div id="myskills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java</h2>
+                    <p>Intermediate</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                    <p>Intermediate</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>Html</h2>
+                    <p>Advanced</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3"></i>
+                    <h2>Css</h2>
+                    <p>Intermediate</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-c"></i>
+                    <h2>C</h2>
+                    <p>Intermediate</p>
+                    
+                </div>
+            </div>
+
+        </div>
+     </div>   
+     <div id="education">
+        <div class="container">
+            <h1 class="subtitle">Education</h1>
+            <div class="edu-list">
+                <div>
+                    <i class="fa-solid fa-school" style="color: #fcff2f;"></i>
+                    <h2>SSC     (Sharadhanikethan High Schoool)</h2>
+                    <p>percentage:90%</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-building-columns" style="color: #e5ff1e;"></i>
+                    <h2>Intermediate  (MasterMinds Junior College)</h2>
+                    <p>percentage:80%</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-graduation-cap" style="color: #f7f12b;"></i>
+                    <h2>BTech(Indur Institue of Technology)</h2>
+                    <p>percentage:70%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------------reach me---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>crazyyvamshi@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>8121503301</p>
+             <div class="social-icons">
+                  <a href="https://www.instagram.com/its__me_vamshi/"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100010304081226"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://www.linkedin.com/in/vamshi-aitha-183449215/"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://github.com/vamshi0531"><i class="fa-brands fa-github"></i></a>
+                  <br><br>
+                  <a href="" class="btn" >Download CV</a>
+                  
+             </div>
+                
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="your name" required>
+                    <input type="text" name="email" placeholder="your email" required>
+                    <textarea name="message" rows="6" placeholder="your message" ></textarea>
+                    <button type="submit" class="btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-heart" style="color: #ff0000;"></i>@Vamshiaitha</p>
+        
+    </div>
+</div>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw_sBjJSkOrCjHXR8p91p0H9w4gXPsBBEthbjiV1_dh1l4Blu3r6FkqK1qYgedtrHp5/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+
+
+ 
+</body>
+</html>
